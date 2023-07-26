@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Laporan_Pemasukan" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3d700d89-2124-4435-9b03-60976c60b2c6">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="99" splitType="Stretch">
+			<staticText>
+				<reportElement x="150" y="10" width="290" height="30" uuid="0e5e13ea-f680-4d10-917e-c44f818b1716"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PEMASUKAN UDASAMPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="40" width="330" height="50" uuid="7bb85845-3a2f-48ea-b128-f01811f6b77b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[JL. Suka Makmur No.31, Bekasi Timur
+No.Telp : (021) 75892100
+Email : @udasampe@gmail.com]]></text>
+			</staticText>
+			<image>
+				<reportElement x="50" y="10" width="81" height="81" uuid="e3cf1e3e-03fb-4cc9-82e6-7044ea43ef93"/>
+				<imageExpression><![CDATA[""]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="145" splitType="Stretch">
+			<line>
+				<reportElement x="5" y="1" width="545" height="1" uuid="60fc1f7e-f7fb-4c59-92a6-378e070f04ca">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="5" y="5" width="545" height="1" uuid="c17eddb1-e105-4a3f-b038-6212c988a2bc">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="23" width="230" height="20" backcolor="#CCD4D9" uuid="dce31a58-423e-4fc1-a2ab-77067f99cc46">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TANGGAL/WAKTU MULAI]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="3" y="43" width="230" height="30" uuid="9a64e050-0f1e-4514-b1bc-c9eb1f7a908e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{start_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="86" width="230" height="20" backcolor="#CCD4D9" uuid="2ffd8a35-d024-4943-a929-98a15e186bd5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TANGGAL/WAKTU AKHIR]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="3" y="106" width="230" height="30" uuid="dd72914c-a635-4599-9ab5-6d40935d970c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{end_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="85" width="273" height="20" backcolor="#CCD4D9" uuid="4edc24e1-b1c2-4785-9d80-fb98d7f6b423">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TOTAL TRANSAKSI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="22" width="273" height="20" backcolor="#CCD4D9" uuid="c6bcad2d-6e36-48ea-a820-12718b3ac8c7"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TOTAL RUPIAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="42" width="80" height="30" uuid="b2821401-abdf-44a9-a463-8eb433d81661"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rp.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="360" y="42" width="193" height="30" uuid="5535c7ce-d713-4873-94c4-430ab8b44ab3"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parTotalRupiah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="105" width="273" height="30" uuid="e184ccd5-1f7e-4182-b6c8-2ad585b2779d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parTotalTrJual}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="380" y="-21" width="175" height="20" backcolor="#CCD4D9" uuid="e58e4b55-220e-425b-97ea-e9bcdbf3c5f0"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="-21" width="180" height="20" backcolor="#CCD4D9" uuid="163960a0-7fce-4e54-a8f8-d8d305c5b941"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="-57" width="555" height="19" backcolor="#74D0E5" uuid="0f6b6e68-f1ec-427d-94fa-52de53af52b0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[TRANSAKSI PENGIRIMAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="-21" width="200" height="20" backcolor="#CCD4D9" uuid="cc48c7c4-784b-4478-ae81-82fa0f081067"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[TANGGAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="-1" width="175" height="20" uuid="bc6a1ac9-2947-489b-a497-49f5ad0cf7dd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{total_penjualan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="-1" width="180" height="20" uuid="729d3d36-e402-4719-a398-c29d65c09850"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="-1" width="200" height="20" uuid="4cf4a6ed-05b3-42fe-872f-db34476e2342"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tgl_transaksi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="42" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="87" splitType="Stretch">
+			<textField>
+				<reportElement x="450" y="0" width="88" height="18" uuid="853cf3a1-68a9-41f4-9584-b7a274d2fc76"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parToday}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="412" y="0" width="38" height="18" uuid="de49ffb2-6699-4ab6-b73e-5166934b9392"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Bekasi, ]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

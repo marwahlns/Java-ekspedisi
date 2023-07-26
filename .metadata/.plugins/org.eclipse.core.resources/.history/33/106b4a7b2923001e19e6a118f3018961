@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Laporan_BestCourier" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1e0c2aa7-f216-429d-ba85-8c8ff1b16768">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="108" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="10" width="290" height="30" uuid="29cc96cc-e4a5-4784-9ffb-5580366856cb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PEMASUKAN UDASAMPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="40" width="330" height="50" uuid="e1ed6d1e-f273-4bde-940b-2cc7264ed005"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[JL. Suka Makmur No.31, Bekasi Timur
+No.Telp : (021) 75892100
+Email : @udasampe@gmail.com]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="0" width="200" height="90" uuid="12be992b-56de-4847-8d8c-c978449a6eba"/>
+				<imageExpression><![CDATA["C:/Users/hp/Downloads/cepat dan aman (5).png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="5" y="96" width="545" height="1" uuid="21f0506a-2f13-49aa-a1a5-3829275de055">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="5" y="100" width="545" height="1" uuid="d082b5fd-bb8f-4357-bb37-460904452d39">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

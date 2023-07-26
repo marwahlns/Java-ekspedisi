@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Resi" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ec7b7a67-c813-4bfd-bfee-45527e400ba6">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="Alamat_Penerima" class="java.lang.String"/>
+	<parameter name="Nama_Pengirim" class="java.lang.String"/>
+	<parameter name="NoTelp_Pengirim" class="java.lang.String"/>
+	<parameter name="Alamat_Pengirim" class="java.lang.String"/>
+	<parameter name="Nama_Penerima" class="java.lang.String"/>
+	<parameter name="NoTelp_Penerima" class="java.lang.String"/>
+	<parameter name="Jarak" class="java.lang.String"/>
+	<parameter name="Berat" class="java.lang.String"/>
+	<parameter name="Total" class="java.lang.String"/>
+	<parameter name="Resi" class="java.lang.String"/>
+	<parameter name="Jenis_Pengiriman" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<staticText>
+				<reportElement x="280" y="47" width="70" height="21" uuid="89d17c77-cfb2-4e43-9d1d-f01e81741c37"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[No. Resi :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="50" width="150" height="21" uuid="49d9facc-453a-4661-b2ce-9b433eed2531"/>
+				<textFieldExpression><![CDATA[$P{Resi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="109" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="142" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="106" width="200" height="30" uuid="33e77b09-1060-4693-aaf3-9d70da289913"/>
+				<textFieldExpression><![CDATA[$P{Alamat_Penerima}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="100" height="30" uuid="7893ff07-e9d2-4a56-98ee-41d7c9567d01"/>
+				<textFieldExpression><![CDATA[$P{Nama_Pengirim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="100" height="30" uuid="505a8a40-c712-4fdf-b05d-8d692aec039d"/>
+				<textFieldExpression><![CDATA[$P{NoTelp_Pengirim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="30" width="200" height="30" uuid="ec60a1e4-8240-4994-82e0-cae569ceafe0"/>
+				<textFieldExpression><![CDATA[$P{Alamat_Pengirim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="76" width="100" height="30" uuid="f9255e82-b02c-4adf-944d-863c8004e9ec"/>
+				<textFieldExpression><![CDATA[$P{Nama_Penerima}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="76" width="100" height="30" uuid="c9490f2c-6810-4d1c-929f-ca12a74a8656"/>
+				<textFieldExpression><![CDATA[$P{NoTelp_Penerima}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="100" height="30" uuid="94a1ba85-4f45-481d-b583-f1690608bd18"/>
+				<textFieldExpression><![CDATA[$P{Jarak}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="30" width="100" height="30" uuid="0692c5d7-33a2-4fba-84d9-97703c956643"/>
+				<textFieldExpression><![CDATA[$P{Berat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="60" width="100" height="30" uuid="adb7edc8-8fdd-4475-9963-693e46666462"/>
+				<textFieldExpression><![CDATA[$P{Total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="90" width="100" height="30" uuid="6b5f52da-0f4a-4c9e-9362-ae7e4ee84c06"/>
+				<textFieldExpression><![CDATA[$P{Jenis_Pengiriman}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

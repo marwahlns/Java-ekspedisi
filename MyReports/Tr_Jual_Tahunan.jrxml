@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Stok_Tahunan" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6599e8e8-dcfd-4e21-94d5-a3297299cd9e">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="da_Tr_Jual"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="468"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="521"/>
+	<parameter name="parToday" class="java.lang.String"/>
+	<parameter name="parTotalRupiah" class="java.lang.String"/>
+	<parameter name="parTotalTrJual" class="java.lang.String"/>
+	<parameter name="start_date" class="java.sql.Date"/>
+	<parameter name="end_date" class="java.sql.Date"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM "Report_TrJual"
+WHERE tgl_transaksi BETWEEN $P{start_date} AND $P{end_date}]]>
+	</queryString>
+	<field name="id_transaksi" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="id_transaksi"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_transaksi"/>
+	</field>
+	<field name="tgl_transaksi" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="tgl_transaksi"/>
+		<property name="com.jaspersoft.studio.field.label" value="tgl_transaksi"/>
+	</field>
+	<field name="Bulan" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Bulan"/>
+		<property name="com.jaspersoft.studio.field.label" value="Bulan"/>
+	</field>
+	<field name="Tahun" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Tahun"/>
+		<property name="com.jaspersoft.studio.field.label" value="Tahun"/>
+	</field>
+	<field name="total_penjualan" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="total_penjualan"/>
+		<property name="com.jaspersoft.studio.field.label" value="total_penjualan"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="83" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="90" y="0" width="375" height="62" forecolor="#CCD4D9" backcolor="#74D0E5" uuid="6bc58c0b-6d9b-45e3-b8a1-181fbdeb4271"/>
+				<graphicElement>
+					<pen lineWidth="0.0" lineColor="#000000"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="465" y="0" width="30" height="62" backcolor="#F8CC0A" uuid="7abd9ba8-947b-4938-b1da-6a2285ec32b4"/>
+				<graphicElement>
+					<pen lineWidth="0.0" lineColor="#74D0E5"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="495" y="0" width="30" height="62" forecolor="#F77070" backcolor="#F77070" uuid="a338c534-0173-4c2d-a7f0-3b1686859824"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="525" y="0" width="30" height="62" forecolor="#58C536" backcolor="#58C536" uuid="b04a2969-6c2c-4729-9fb3-aa4ad10ea869"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="30" height="62" forecolor="#58C536" backcolor="#58C536" uuid="aa383d6d-b745-48e8-b723-910fc72f28fd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="30" y="0" width="30" height="62" forecolor="#F77070" backcolor="#F77070" uuid="7c05c78f-27a5-4134-a017-791fd5b8c90e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="60" y="0" width="30" height="62" backcolor="#F8CC0A" uuid="638699b5-1ccf-4f18-a42b-1af2a086712d"/>
+				<graphicElement>
+					<pen lineWidth="0.0" lineColor="#74D0E5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="151" y="9" width="259" height="45" uuid="b725d4ff-0316-4934-bf8c-fa7ceeb5d3b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STATIONEEERY]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="171" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="37" width="230" height="20" backcolor="#CCD4D9" uuid="91533a8d-b114-402d-85b2-0de4f520a568">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TANGGAL/WAKTU MULAI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="100" width="273" height="20" backcolor="#CCD4D9" uuid="b043b9e1-7b1b-4a80-b83f-aa2e7e814c20">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TOTAL TRANSAKSI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="37" width="273" height="20" backcolor="#CCD4D9" uuid="9fa204f5-320d-4663-8135-112bde63ba5e"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TOTAL RUPIAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="19" backcolor="#74D0E5" uuid="2935405c-8714-418f-b6b6-65ca738218a0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[OVERVIEW]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="57" width="80" height="30" uuid="2d45426b-c436-48c6-88d1-58aa2dc2bdeb"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rp.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="360" y="57" width="193" height="30" uuid="268bb898-db1c-4e14-9eb1-815a2bcb3fa4"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parTotalRupiah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="120" width="273" height="30" uuid="c1420e67-e281-468c-b6e7-9be7e742d086"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parTotalTrJual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="57" width="230" height="30" uuid="d8f2a579-d980-40b9-bc47-09a2a8e6ab6f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{start_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="100" width="230" height="20" backcolor="#CCD4D9" uuid="35694a8e-9500-433b-a611-a86c9e5da7b3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TANGGAL/WAKTU AKHIR]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="120" width="230" height="30" uuid="4463a33d-5172-46d9-bd07-740a4a5b52fe"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{end_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="56" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="380" y="36" width="175" height="20" backcolor="#CCD4D9" uuid="940c1aa9-3cb7-4fd7-a54f-9f01bc103e21"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[HARGA PER ITEM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="36" width="180" height="20" backcolor="#CCD4D9" uuid="944a0f5b-3ea3-498e-ac03-d03ce028396c"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="19" backcolor="#74D0E5" uuid="b8241f85-3bd9-4360-8795-856ee6a9d43f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[TRANSAKSI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="36" width="200" height="20" backcolor="#CCD4D9" uuid="1ef44265-f506-4b21-99a4-d34ff3bc26bf"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[TANGGAL]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="380" y="0" width="175" height="20" uuid="c3ac967b-5f1e-43bd-b4d6-95255e0e78e2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{total_penjualan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="180" height="20" uuid="cb5dceb9-3e54-48da-9555-7c6c92de3979"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="200" height="20" uuid="e7631801-a1b2-419f-8635-b56d9ede6f2b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tgl_transaksi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="37" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="107" splitType="Stretch">
+			<textField>
+				<reportElement x="446" y="2" width="88" height="18" uuid="7c7c4dd9-586a-4197-b03c-85621eb1cf49"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parToday}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="408" y="2" width="38" height="18" uuid="08c18164-67e6-4cf3-9c35-839858615c13"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Bekasi, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="25" width="180" height="30" uuid="543c7449-8249-4622-bc0b-33580b875a9f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Manajamen Stationeery]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="36" splitType="Stretch"/>
+	</summary>
+</jasperReport>

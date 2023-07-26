@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Resi" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ec7b7a67-c813-4bfd-bfee-45527e400ba6">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="Nama_Penerima" class="java.lang.String"/>
+	<field name="Nama_Pengirim" class="java.lang.String"/>
+	<field name="Telp_Penerima" class="java.lang.String"/>
+	<field name="Telp_Pengirim" class="java.lang.String"/>
+	<field name="Alamat_Penerima" class="java.lang.String"/>
+	<field name="Alamat_Pegirim" class="java.lang.String"/>
+	<field name="Berat" class="java.lang.String"/>
+	<field name="Jarak" class="java.lang.String"/>
+	<field name="Harga" class="java.lang.String"/>
+	<field name="Jenis_Pengiriman" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<image>
+				<reportElement x="80" y="17" width="110" height="81" uuid="486e2ec0-1f8c-4d1f-8805-1816a994d1eb"/>
+				<imageExpression><![CDATA[""]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="280" y="47" width="70" height="21" uuid="89d17c77-cfb2-4e43-9d1d-f01e81741c37"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[No. Resi :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="360" y="47" width="120" height="21" uuid="86577236-0094-44cf-862a-2098c40fff06"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="109" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="133" splitType="Stretch">
+			<staticText>
+				<reportElement x="81" y="0" width="100" height="20" uuid="20ec1a9d-92fc-4d50-9100-ac852a8d9e4e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="05884d5d-5120-4083-92f8-8b5d73eab0eb"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama_Penerima]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="70" width="100" height="20" uuid="69a3f112-0a93-49d8-b77f-7f7c1aa6089d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="90233c08-dacd-4925-b0f4-01b03993a7bc"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama_Pengirim]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="100" height="20" uuid="ff5ea06e-59da-4e9a-944a-c0a4e7eaf94d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="93511de6-3a92-43fd-b7fb-b54bdd40e3c9"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telp_Penerima]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="70" width="100" height="20" uuid="3f1ea6be-ae37-4d37-a58d-031df9dce9e0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d28f57f7-068a-407b-8286-6aedf059093b"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telp_Pengirim]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="30" width="201" height="20" uuid="c967c861-88a8-40da-9eb8-575b60fb7f20">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5099ce4e-2899-44b7-b421-2fd21d9da5c2"/>
+				</reportElement>
+				<text><![CDATA[Alamat_Penerima]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="100" width="201" height="20" uuid="0dbad5a5-9b26-42d9-b134-1b940501be3c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="574df73b-d244-45a1-b9a8-c52603cc4cba"/>
+				</reportElement>
+				<text><![CDATA[Alamat_Pegirim]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="0" width="100" height="20" uuid="62e1c219-266f-48bd-9627-82c3ad9467a7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="594e7ac7-f0f6-461e-b37b-f53cbdb4b959"/>
+				</reportElement>
+				<text><![CDATA[Berat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="30" width="100" height="20" uuid="dd8e27e6-7b98-41c0-910a-7f1b7e0abef0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="88a80466-6791-4590-bb8d-e2b05cee4d67"/>
+				</reportElement>
+				<text><![CDATA[Jarak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="87" width="100" height="20" uuid="dfebf61b-87e2-4666-bb30-5ff9f96a0f4c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebb5507b-80ad-425e-8d68-70f190826b47"/>
+				</reportElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="60" width="100" height="20" uuid="ce6d6c63-8ed8-418a-8cc0-cca154cfad07">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="47fd2c0d-4f65-4fef-b560-f93cc3ef7500"/>
+				</reportElement>
+				<text><![CDATA[Jenis_Pengiriman]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="0" width="100" height="20" uuid="28c0c1d9-8aa7-4948-9a12-3338de5e348b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="05884d5d-5120-4083-92f8-8b5d73eab0eb"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Nama_Penerima}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="59" width="100" height="16" uuid="50c81c53-92ba-461c-af1c-cf392595d9ef">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="90233c08-dacd-4925-b0f4-01b03993a7bc"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Nama_Pengirim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="1" width="100" height="19" uuid="d893da21-23af-42bd-8a4f-4b20ed89746d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="93511de6-3a92-43fd-b7fb-b54bdd40e3c9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Telp_Penerima}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="60" width="100" height="15" uuid="498fd290-c8e6-441d-aedb-9c40e3b028e3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d28f57f7-068a-407b-8286-6aedf059093b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Telp_Pengirim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="30" width="200" height="20" uuid="b7d37367-c9a0-4848-8fd2-5fa253367b8d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5099ce4e-2899-44b7-b421-2fd21d9da5c2"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Alamat_Penerima}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="90" width="201" height="20" uuid="6ab61102-a805-4328-9737-fe6ab851d80b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="574df73b-d244-45a1-b9a8-c52603cc4cba"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Alamat_Pegirim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="100" height="20" uuid="1143f4f7-4c2c-4bd3-a08f-08981917e92f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="594e7ac7-f0f6-461e-b37b-f53cbdb4b959"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Berat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="27" width="100" height="20" uuid="13f075d0-2db2-45c7-a732-a5f62298f80f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="88a80466-6791-4590-bb8d-e2b05cee4d67"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Jarak}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="58" width="100" height="16" uuid="b49869a9-b48a-48f5-b64a-10e5d97093f0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebb5507b-80ad-425e-8d68-70f190826b47"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="85" width="100" height="15" uuid="4aaed717-d3e1-4897-8efd-3ac91432a7a2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="47fd2c0d-4f65-4fef-b560-f93cc3ef7500"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Jenis_Pengiriman}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
